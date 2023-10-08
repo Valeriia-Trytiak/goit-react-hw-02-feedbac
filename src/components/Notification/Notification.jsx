@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'; 
-import{ Message } from "./Notification.styled"
+import { ImWarning } from 'react-icons/im';
+
+import{ Message, Container } from "./Notification.styled"
 
 export const Notification = ({ message })=> {
-    return <Message>{message}</Message>
+    return <Container><Message>{message}</Message>
+    <ImWarning size='17px'/></Container>
 }
 
 Notification.prototype={
